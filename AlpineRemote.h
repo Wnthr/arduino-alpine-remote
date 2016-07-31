@@ -19,17 +19,20 @@ class AlpineRemote
     void sendMute();
     void sendPresetUp();
     void sendPresetDown();
-    void sendChangeSource();
+    void sendSourceSelect();
     void sendTrackUp();
     void sendTrackDown();
     void sendPower();
     void sendPlay();
-    void sendBandProg();
+    void sendBandSelect();
+    void sendActivateSiri();
+    void sendActivateMenu();
 
-    void sendCommand(int command);
+    void sendCommand(uint16_t command);
 
   private:
     uint8_t _pin;
+    String _bitstream;
 };
 
 #endif
