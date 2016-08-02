@@ -29,6 +29,6 @@ void setup() {
 }
 
 void loop() {
-  alpine.sendPlay();
+  alpine.sendPlayPause();
   delay(3000);
 }

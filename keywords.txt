@@ -8,7 +8,7 @@ sendSourceSelect	KEYWORD2
 sendTrackUp	KEYWORD2
 sendTrackDown	KEYWORD2
 sendPower	KEYWORD2
-sendPlay	KEYWORD2
+sendPlayPause	KEYWORD2
 sendBandSelect	KEYWORD2
 sendActivateSiri	KEYWORD2
 sendActivateMenu	KEYWORD2

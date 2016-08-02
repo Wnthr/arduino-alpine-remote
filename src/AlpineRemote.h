@@ -23,7 +23,7 @@ class AlpineRemote
     void sendTrackUp();
     void sendTrackDown();
     void sendPower();
-    void sendPlay();
+    void sendPlayPause();
     void sendBandSelect();
     void sendActivateSiri();
     void sendActivateMenu();

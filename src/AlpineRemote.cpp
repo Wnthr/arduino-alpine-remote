@@ -56,7 +56,7 @@ void AlpineRemote::sendPower() {
   AlpineRemote::sendCommand(0x77EB);
 }
 
-void AlpineRemote::sendPlay() {
+void AlpineRemote::sendPlayPause() {
   AlpineRemote::sendCommand(0x57FD);
 }
 
