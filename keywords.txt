@@ -1,0 +1,15 @@
+AlpineRemote	KEYWORD1
+sendVolumeUp	KEYWORD2
+sendVolumeDown	KEYWORD2
+sendMute	KEYWORD2
+sendPresetUp	KEYWORD2
+sendPresetDown	KEYWORD2
+sendSourceSelect	KEYWORD2
+sendTrackUp	KEYWORD2
+sendTrackDown	KEYWORD2
+sendPower	KEYWORD2
+sendPlay	KEYWORD2
+sendBandSelect	KEYWORD2
+sendActivateSiri	KEYWORD2
+sendActivateMenu	KEYWORD2
+sendCommand	KEYWORD2
