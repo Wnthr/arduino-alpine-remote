@@ -14,21 +14,21 @@ class AlpineRemote
   public:
     AlpineRemote(uint8_t pin);
 
-    void sendVolumeUp();
-    void sendVolumeDown();
-    void sendMute();
-    void sendPresetUp();
-    void sendPresetDown();
-    void sendSourceSelect();
-    void sendTrackUp();
-    void sendTrackDown();
-    void sendPower();
-    void sendPlayPause();
-    void sendBandSelect();
-    void sendActivateSiri();
-    void sendActivateMenu();
+    void writeVolumeUp();
+    void writeVolumeDown();
+    void writeMute();
+    void writePresetUp();
+    void writePresetDown();
+    void writeSourceSelect();
+    void writeTrackUp();
+    void writeTrackDown();
+    void writePower();
+    void writePlayPause();
+    void writeBandSelect();
+    void writeActivateSiri();
+    void writeActivateMenu();
 
-    void sendCommand(uint16_t command);
+    void writeCommand(uint16_t command);
 
   private:
     uint8_t _pin;

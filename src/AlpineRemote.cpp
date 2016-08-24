@@ -20,55 +20,55 @@ AlpineRemote::AlpineRemote(uint8_t pin) {
   _bitstream = "";
 }
 
-void AlpineRemote::sendVolumeUp() {
-  AlpineRemote::sendCommand(0xDBD6);
+void AlpineRemote::writeVolumeUp() {
+  AlpineRemote::writeCommand(0xDBD6);
 }
 
-void AlpineRemote::sendVolumeDown() {
-  AlpineRemote::sendCommand(0x6DF6);
+void AlpineRemote::writeVolumeDown() {
+  AlpineRemote::writeCommand(0x6DF6);
 }
 
-void AlpineRemote::sendMute() {
-  AlpineRemote::sendCommand(0xADEE);
+void AlpineRemote::writeMute() {
+  AlpineRemote::writeCommand(0xADEE);
 }
 
-void AlpineRemote::sendPresetUp() {
-  AlpineRemote::sendCommand(0xABEF);
+void AlpineRemote::writePresetUp() {
+  AlpineRemote::writeCommand(0xABEF);
 }
 
-void AlpineRemote::sendPresetDown() {
-  AlpineRemote::sendCommand(0x55FF);
+void AlpineRemote::writePresetDown() {
+  AlpineRemote::writeCommand(0x55FF);
 }
 
-void AlpineRemote::sendSourceSelect() {
-  AlpineRemote::sendCommand(0xB7DB);
+void AlpineRemote::writeSourceSelect() {
+  AlpineRemote::writeCommand(0xB7DB);
 }
 
-void AlpineRemote::sendTrackUp() {
-  AlpineRemote::sendCommand(0xBBDA);
+void AlpineRemote::writeTrackUp() {
+  AlpineRemote::writeCommand(0xBBDA);
 }
 
-void AlpineRemote::sendTrackDown() {
-  AlpineRemote::sendCommand(0x5DFA);
+void AlpineRemote::writeTrackDown() {
+  AlpineRemote::writeCommand(0x5DFA);
 }
 
-void AlpineRemote::sendPower() {
-  AlpineRemote::sendCommand(0x77EB);
+void AlpineRemote::writePower() {
+  AlpineRemote::writeCommand(0x77EB);
 }
 
-void AlpineRemote::sendPlayPause() {
-  AlpineRemote::sendCommand(0x57FD);
+void AlpineRemote::writePlayPause() {
+  AlpineRemote::writeCommand(0x57FD);
 }
 
-void AlpineRemote::sendBandSelect() {
-  AlpineRemote::sendCommand(0x6BF7);
+void AlpineRemote::writeBandSelect() {
+  AlpineRemote::writeCommand(0x6BF7);
 }
 
-void AlpineRemote::sendActivateSiri() {
-  AlpineRemote::sendCommand(0x7B6E);
+void AlpineRemote::writeActivateSiri() {
+  AlpineRemote::writeCommand(0x7B6E);
 }
 
-void AlpineRemote::sendCommand(uint16_t command) {
+void AlpineRemote::writeCommand(uint16_t command) {
 
   // FIXME: This should be sent asynchronously using timer instead.
   //        Also, the timings should probably match up with NEC RF
@@ -78,7 +78,7 @@ void AlpineRemote::sendCommand(uint16_t command) {
 
   _bitstream = "";
 
-  // First send 8ms high
+  // First write 8ms high
   digitalWrite(_pin, HIGH);
   delay(8);
   // Send 4.5ms low
