@@ -1,7 +1,7 @@
 /*
   PlayPause
 
- Alternates between sending play and pause to the Alpine head unit
+ Alternates between writing play and pause to the Alpine head unit
  every three seconds.
 
 
@@ -29,6 +29,6 @@ void setup() {
 }
 
 void loop() {
-  alpine.sendPlayPause();
+  alpine.writePlayPause();
   delay(3000);
 }
